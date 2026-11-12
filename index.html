@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a2a">
+  <meta name="description" content="MedAlign helps patients find specialized wellness and medical clinics through a free, four-minute assessment. Compare clinic fit, services, pricing, wait times and telehealth options.">
+  <meta name="keywords" content="MedAlign, Med Align, patient to clinic matching, clinic matching platform, wellness clinics, medical clinics, personalized clinic matches">
+  <meta property="og:title" content="MedAlign — Personalized, Not Random">
+  <meta property="og:description" content="A clearer way to find a clinic that fits your goals. Take a free four-minute assessment and compare personalized clinic matches.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://getmedalign.com/">
+  <title>MedAlign | Personalized Patient-to-Clinic Matching</title>
+  <link rel="canonical" href="https://getmedalign.com/">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE4IiBmaWxsPSIjMTAyYTJhIi8+CjxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjIwIiBmaWxsPSJub25lIiBzdHJva2U9IiNiOWQ4YmMiIHN0cm9rZS13aWR0aD0iMyIvPgo8cGF0aCBkPSJNMjMgMjJ2MjBNMzIgMTZ2MjZNNDEgMjJ2MjAiIHN0cm9rZT0iI2I5ZDhiYyIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+/* MedAlign responsive website */
+:root{--ink:#142d2d;--muted:#617474;--teal:#176b62;--teal-dark:#102a2a;--mint:#dceee7;--cream:#f7f8f4;--line:#dfe7e2;--white:#fff;--lime:#c8e5a4;--serif:Georgia,"Times New Roman",serif;--sans:"DM Sans",Arial,sans-serif;--display:"Manrope","DM Sans",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65}a{color:inherit;text-decoration:none}.container{width:min(1160px,calc(100% - 48px));margin-inline:auto}.section-pad{padding:104px 0}.skip-link{position:absolute;left:-999px;top:8px;background:#fff;padding:10px;z-index:100}.skip-link:focus{left:8px}.site-header{height:82px;position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(20,45,45,.08)}.nav-wrap{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{display:inline-flex;align-items:center;gap:11px;font:800 25px var(--display);letter-spacing:-1.3px;color:var(--ink)}.brand-light{font-weight:500;color:#66807a}.brand-mark{width:28px;height:28px;border:2px solid var(--teal);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;gap:2px;transform:rotate(-25deg)}.brand-mark span{width:3px;height:12px;border-radius:5px;background:var(--teal);display:block}.brand-mark span:nth-child(2){height:17px}.primary-nav{display:flex;align-items:center;gap:30px;font-size:13px;font-weight:600;color:#526563}.primary-nav>a:not(.nav-cta):hover,.footer-col a:hover{color:var(--teal)}.nav-cta{background:var(--teal-dark);color:#fff;padding:12px 17px;border-radius:4px}.nav-cta span{margin-left:8px}.menu-toggle{display:none;border:0;background:none;padding:10px}.menu-toggle span{display:block;width:24px;height:2px;background:var(--ink);margin:5px}
+.hero{position:relative;overflow:hidden;background:var(--cream);padding:92px 0 76px;min-height:650px}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:50px;position:relative;z-index:2}.eyebrow{margin:0 0 20px;text-transform:uppercase;letter-spacing:2px;font-size:10px;font-weight:700;color:var(--teal)}.eyebrow-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#8ab77a;margin-right:9px}.hero h1{font:700 clamp(52px,6vw,78px)/1.04 var(--display);letter-spacing:-4px;margin:0 0 24px;max-width:620px}.hero h1 em,h2 em{font-family:var(--serif);font-weight:400;color:var(--teal);letter-spacing:-2px}.hero-lede{font-size:17px;line-height:1.8;color:#5c706d;max-width:550px}.hero-actions{display:flex;align-items:center;gap:28px;margin-top:32px}.button{display:inline-flex;align-items:center;justify-content:center;gap:24px;padding:16px 21px;font-size:13px;font-weight:700;border-radius:4px;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--teal);color:#fff}.button-primary:hover{background:#10564f}.button span{font-size:17px}.text-link,.arrow-link{font-size:13px;font-weight:700;color:var(--ink)}.text-link span{margin-left:8px;color:var(--teal)}.hero-proof{display:flex;align-items:center;gap:25px;margin-top:55px}.proof-item{display:flex;flex-direction:column}.proof-item strong{font:700 20px var(--display)}.proof-item span{font-size:11px;color:#788984}.proof-divider{height:32px;width:1px;background:#d6e0da}.hero-visual{height:440px;position:relative;display:flex;align-items:center;justify-content:center}.visual-glow{position:absolute;width:390px;height:390px;border-radius:50%;background:radial-gradient(circle,#d7e9db 0,#eaf1e9 48%,transparent 70%)}.match-card{width:min(390px,88%);background:#fff;border:1px solid #e5ebe6;border-radius:9px;padding:27px;box-shadow:0 24px 65px rgba(28,67,57,.12);position:relative;z-index:2}.match-card-top,.match-score-row,.match-heading,.match-details{display:flex;align-items:center;justify-content:space-between}.tiny-label,.live-dot,.match-details small,.panel-top{font-size:9px;letter-spacing:1.5px;font-weight:700;color:#7c8e88}.live-dot{color:var(--teal)}.live-dot:before{content:"";display:inline-block;width:6px;height:6px;background:#7dbb84;border-radius:50%;margin-right:6px}.match-heading{justify-content:flex-start;gap:13px;margin:25px 0}.match-icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--mint);font-size:23px;color:var(--teal)}.match-heading strong,.match-heading span{display:block}.match-heading strong{font-size:14px}.match-heading span{font-size:11px;color:#83918c}.match-score-row{font-size:11px;color:#75847f}.match-score-row strong{font:700 25px var(--display);color:var(--teal)}.score-track{height:6px;background:#edf1ed;border-radius:8px;margin:8px 0 17px}.score-track span{display:block;width:92%;height:100%;background:#75a98b;border-radius:8px}.match-tags{display:flex;gap:7px}.match-tags span{font-size:10px;padding:6px 10px;background:#f3f7f3;border-radius:20px;color:#60756d}.match-details{border-top:1px solid #edf0ed;margin-top:22px;padding-top:18px;gap:12px}.match-details div{flex:1}.match-details small,.match-details b{display:block}.match-details small{font-size:8px}.match-details b{font-size:11px;margin-top:5px}.match-card-foot{border-top:1px solid #edf0ed;margin-top:19px;padding-top:15px;font-size:10px;color:#547068}.check-mark{display:inline-grid;place-items:center;width:17px;height:17px;border-radius:50%;background:var(--mint);color:var(--teal);margin-right:6px}.floating-note{position:absolute;right:-4px;bottom:38px;z-index:3;display:flex;align-items:center;gap:10px;padding:13px 17px;background:#fff;border-radius:6px;box-shadow:0 12px 30px #1d4c3d1a}.note-icon{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#eff5ec;color:var(--teal);font-size:20px}.floating-note b,.floating-note small{display:block}.floating-note b{font-size:11px}.floating-note small{font-size:9px;color:#7a8983}.hero-visual-caption{position:absolute;left:18px;bottom:8px;color:#7c9088;font:italic 16px var(--serif)}.hero-orb{position:absolute;border-radius:50%;border:1px solid #dce7df}.orb-one{width:600px;height:600px;right:-270px;top:-370px}.orb-two{width:430px;height:430px;left:-310px;bottom:-320px}.hero-bottom-line{height:5px;background:linear-gradient(90deg,#b7d69d 0 25%,#4e8a79 25% 70%,#d7e7d8 70%)}
+.intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:100px}.intro h2,.section-heading h2,.fit-copy h2,.model-grid h2,.trust-copy h2{font:700 clamp(34px,4vw,48px)/1.17 var(--display);letter-spacing:-2px;margin:0}.intro-text p,.fit-copy>p,.model-grid>div>p,.trust-copy>p{color:#647672;font-size:15px;line-height:1.9;margin:0 0 18px}.arrow-link{display:inline-flex;gap:14px;align-items:center;margin-top:10px;color:var(--teal)}.arrow-link span{font-size:17px}
+.process{background:#f5f8f4}.section-heading{max-width:620px}.section-heading.centered{text-align:center;margin:0 auto 55px}.section-heading>p:last-child{color:#71817b;font-size:14px}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.step-card{background:#fff;border:1px solid #e6ece6;padding:25px 20px 23px;min-height:290px;position:relative}.step-number{font:700 11px var(--display);color:#9eafa7;letter-spacing:1px}.step-icon{width:43px;height:43px;border-radius:50%;background:#eaf3e9;color:var(--teal);display:grid;place-items:center;font-size:22px;margin:24px 0 18px}.step-card h3{font:700 16px var(--display);margin:0 0 10px}.step-card p{font-size:12px;color:#74837d;line-height:1.8;margin:0 0 22px}.step-meta{position:absolute;bottom:19px;left:20px;font-size:8px;letter-spacing:1px;font-weight:700;color:var(--teal)}.process-note{margin:25px auto 0;display:flex;justify-content:center;align-items:center;gap:11px;color:#61756d;font-size:12px}.process-note p{margin:0}.process-note strong{color:var(--ink)}.note-check{display:grid;place-items:center;width:20px;height:20px;background:#dceee3;color:var(--teal);border-radius:50%}
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}.fit-copy>p{margin-top:20px}.check-list,.simple-list{list-style:none;padding:0;margin:25px 0}.check-list li{display:flex;align-items:center;gap:12px;margin:13px 0;font-size:13px;color:#4f6560}.check-list li span{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#e5f1e8;color:var(--teal);font-size:11px}.small-note{font-size:11px!important;color:#8b9891!important;border-left:2px solid #bfd7c2;padding-left:13px}.fit-panel{background:#f5f8f4;border:1px solid #e2eae2;padding:30px 34px;border-radius:7px}.panel-top{display:flex;justify-content:space-between;align-items:center}.panel-symbol{font-size:20px;color:var(--teal)}.fit-profile{display:flex;align-items:center;gap:12px;margin:24px 0}.profile-avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#d9e9db;color:var(--teal);font:700 18px var(--display)}.fit-profile b,.fit-profile small{display:block}.fit-profile b{font-size:14px}.fit-profile small{font-size:10px;color:#819089}.profile-row{display:flex;justify-content:space-between;gap:15px;border-top:1px solid #e2e9e2;padding:13px 0;font-size:11px}.profile-row span{color:#829089}.profile-row b{text-align:right;font-weight:600}.panel-bottom{display:flex;gap:10px;align-items:center;margin-top:10px;padding:14px;background:#e7f1e8;color:#547066;font-size:10px}.panel-check{font-size:16px;color:var(--teal)}
+.specialties{background:var(--teal-dark);color:#fff}.specialties .eyebrow{color:#b7d9c0}.specialties .section-heading>p:last-child{color:#b4c5bd}.specialties h2 em{color:#b7d9c0}.specialty-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 24px;margin-top:45px}.specialty{display:flex;align-items:center;gap:16px;padding:19px 0;border-bottom:1px solid #34504a}.specialty span{font-size:9px;color:#91b4a4;letter-spacing:1px}.specialty b{font-size:13px;font-weight:600;flex:1}.specialty i{font-style:normal;color:#9bc4a6}
+.audience{background:#f5f8f4}.audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.audience-card{padding:45px 44px;min-height:465px}.patient-card{background:#e4eee5}.clinic-card{background:#173b37;color:#fff}.clinic-card .eyebrow{color:#b9d8bc}.audience-card h2{font:700 36px/1.17 var(--display);letter-spacing:-1.8px;margin:0 0 18px}.audience-card h2 em{color:var(--teal)}.clinic-card h2 em{color:#b8d9b9}.audience-card>p:not(.eyebrow){font-size:13px;line-height:1.9;color:#687b73}.clinic-card>p:not(.eyebrow){color:#c0d0c9}.simple-list{margin:23px 0 28px}.simple-list li{font-size:12px;margin:10px 0;color:#536a60}.simple-list li:before{content:"✓";color:var(--teal);font-weight:700;margin-right:10px}.clinic-card .simple-list li{color:#d0ded6}.clinic-card .simple-list li:before{color:#b9d9b9}.button-dark{background:var(--teal-dark);color:#fff}.button-light{background:#d6e9d5;color:#173b37}.clinic-disclaimer{display:block;margin-top:12px;color:#b4c8bf;font-size:10px}
+.business-model{background:#fff}.model-grid{display:grid;grid-template-columns:1fr 1fr;gap:100px}.model-grid>div>p{margin-top:20px}.model-points>div{display:flex;gap:18px;padding:17px 0;border-bottom:1px solid var(--line)}.model-icon{font:700 12px var(--display);color:var(--teal);padding-top:2px}.model-points p{margin:0}.model-points b,.model-points small{display:block}.model-points b{font-size:13px}.model-points small{font-size:11px;color:#7c8b85;margin-top:5px;line-height:1.7}
+.trust{background:#f6f8f5}.trust-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:100px}.trust-list{border-top:1px solid #dfe7e0}.trust-item{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid #dfe7e0}.trust-symbol{display:grid;place-items:center;width:25px;height:25px;flex:0 0 25px;border-radius:50%;background:#dfefe1;color:var(--teal);font-size:12px}.trust-item b{font-size:13px}.trust-item p{font-size:11px;color:#75847e;margin:3px 0 0;line-height:1.7}.important-box{display:flex;gap:17px;margin-top:50px;padding:22px 25px;background:#e9f0e9;border-left:3px solid #6c9b7c}.important-icon{display:grid;place-items:center;width:25px;height:25px;flex:0 0 25px;border:1px solid #6c9b7c;border-radius:50%;color:var(--teal);font-family:var(--serif)}.important-box b{font-size:12px}.important-box p,.privacy-note p{margin:4px 0 0;font-size:11px;color:#63766d;line-height:1.8}.privacy-note{display:flex;gap:13px;margin-top:18px;align-items:flex-start}.privacy-lock{font-size:20px;color:var(--teal)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}.faq-list details{border-bottom:1px solid var(--line);padding:0}.faq-list details:first-child{border-top:1px solid var(--line)}.faq-list summary{list-style:none;cursor:pointer;padding:19px 0;display:flex;justify-content:space-between;gap:15px;font-size:13px;font-weight:700}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary span{font-size:19px;color:var(--teal);font-weight:400;transition:transform .2s}.faq-list details[open] summary span{transform:rotate(45deg)}.faq-list details p{margin:0;padding:0 35px 20px 0;font-size:12px;color:#71817a;line-height:1.85}
+.final-cta{background:#173b37;color:#fff;padding:68px 0}.final-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}.final-cta .eyebrow{color:#b9d8bc;margin-bottom:10px}.final-cta h2{font:700 38px/1.15 var(--display);letter-spacing:-1.5px;margin:0}.final-cta h2 em{color:#b9d8bc}.final-cta p:last-child{font-size:12px;color:#c1d1ca;margin:12px 0 0}.button-large{padding:19px 24px;white-space:nowrap}
+.site-footer{background:#102a2a;color:#fff;padding:55px 0 20px}.footer-main{display:grid;grid-template-columns:2fr 1fr 1fr;gap:50px;padding-bottom:45px}.brand-footer{color:#fff}.brand-footer .brand-light{color:#a8c1b6}.brand-footer .brand-mark{border-color:#a8cbb0}.brand-footer .brand-mark span{background:#a8cbb0}.footer-brand p{font-size:11px;color:#9eb4aa;line-height:1.8;margin-top:18px}.footer-col{display:flex;flex-direction:column;gap:11px}.footer-col b{font-size:11px;color:#d8e7de;margin-bottom:7px}.footer-col a{font-size:11px;color:#9eb4aa}.footer-bottom{border-top:1px solid #34504a;padding-top:18px;display:flex;justify-content:space-between;gap:20px;color:#8ca59a;font-size:9px}
+@media(max-width:980px){.primary-nav{gap:17px}.hero-grid{gap:15px}.intro-grid,.fit-grid,.model-grid,.trust-grid{gap:55px}.steps{grid-template-columns:repeat(3,1fr)}.step-card{min-height:265px}.faq-grid{gap:50px}}
+@media(max-width:760px){.container{width:min(100% - 36px,560px)}.section-pad{padding:72px 0}.site-header{height:70px}.menu-toggle{display:block}.primary-nav{display:none;position:absolute;top:69px;left:0;right:0;padding:18px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 15px 25px #163a3010;flex-direction:column;align-items:stretch;gap:0}.primary-nav.open{display:flex}.primary-nav>a{padding:12px 8px}.primary-nav .nav-cta{text-align:center;margin-top:8px}.hero{padding:65px 0 45px}.hero-grid{grid-template-columns:1fr}.hero h1{font-size:54px;letter-spacing:-3px}.hero-lede{font-size:15px}.hero-visual{height:390px;margin-top:12px}.visual-glow{width:330px;height:330px}.match-card{padding:22px}.floating-note{right:0;bottom:15px}.hero-visual-caption{left:0;bottom:-10px}.hero-proof{margin-top:38px}.intro-grid,.fit-grid,.model-grid,.trust-grid,.faq-grid{grid-template-columns:1fr;gap:30px}.intro h2,.section-heading h2,.fit-copy h2,.model-grid h2,.trust-copy h2{font-size:38px}.section-heading.centered{text-align:left;margin-bottom:35px}.steps{grid-template-columns:1fr 1fr}.step-card{min-height:270px}.specialty-grid{grid-template-columns:1fr 1fr;gap:0 18px}.specialty{gap:9px}.specialty b{font-size:11px}.audience-grid{grid-template-columns:1fr}.audience-card{padding:34px 27px;min-height:0}.audience-card h2{font-size:32px}.fit-panel{padding:24px 20px}.profile-row{font-size:10px}.important-box{margin-top:35px}.final-cta-inner{align-items:flex-start;flex-direction:column}.final-cta h2{font-size:34px}.footer-main{grid-template-columns:1fr 1fr;gap:35px}.footer-brand{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:6px}}
+@media(max-width:440px){.hero h1{font-size:46px}.hero-actions{align-items:flex-start;flex-direction:column;gap:17px}.hero-visual{height:355px}.match-card{width:94%;padding:18px}.floating-note{right:-4px;bottom:4px}.hero-proof{gap:14px}.proof-item strong{font-size:17px}.steps{grid-template-columns:1fr}.step-card{min-height:230px}.step-icon{margin:17px 0 12px}.specialty-grid{grid-template-columns:1fr}.specialty{padding:15px 0}.profile-row{align-items:flex-start}.profile-row b{max-width:65%}.footer-main{grid-template-columns:1fr 1fr;gap:25px}.footer-bottom{font-size:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"MedAlign",
+    "url":"https://getmedalign.com/",
+    "description":"A patient-to-clinic matching platform that helps patients compare specialized wellness and medical clinics based on fit."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"MedAlign",
+    "url":"https://getmedalign.com/",
+    "description":"A patient-to-clinic matching platform. Free for patients; clinics are billed per qualified consultation."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="MedAlign home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>med<span class="brand-light">align</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#specialties">Specialties</a>
+        <a href="#for-clinics">For clinics</a>
+        <a href="#trust">Trust &amp; clarity</a>
+        <a class="nav-cta" href="https://getmedalign.com/assessment">Find your clinic <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A more thoughtful way to find care</p>
+          <h1>Find a clinic that fits <em>you.</em></h1>
+          <p class="hero-lede">Your goals are personal. Your clinic search should be, too. MedAlign matches you with specialized wellness and medical clinics based on your goals, symptoms, interests and location.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://getmedalign.com/assessment">Start your free assessment <span>↗</span></a>
+            <a class="text-link" href="#how-it-works">See how it works <span>↓</span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>~4 min</strong><span>Assessment</span></div>
+            <div class="proof-divider"></div>
+            <div class="proof-item"><strong>Free</strong><span>For patients</span></div>
+            <div class="proof-divider"></div>
+            <div class="proof-item"><strong>Fit-first</strong><span>Clinic matches</span></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Illustration of a personalized clinic match">
+          <div class="visual-glow"></div>
+          <div class="match-card">
+            <div class="match-card-top"><span class="tiny-label">YOUR MATCH SNAPSHOT</span><span class="live-dot">PERSONALIZED</span></div>
+            <div class="match-heading"><div class="match-icon">✳</div><div><strong>A closer fit starts here</strong><span>Based on your assessment</span></div></div>
+            <div class="match-score-row"><span>Illustrative match</span><strong>92%</strong></div>
+            <div class="score-track"><span></span></div>
+            <div class="match-tags"><span>Goals</span><span>Symptoms</span><span>Location</span></div>
+            <div class="match-details"><div><small>INTERESTS</small><b>Hormone &amp; wellness care</b></div><div><small>NEXT STEP</small><b>Compare clinic options</b></div></div>
+            <div class="match-card-foot"><span class="check-mark">✓</span> Ranked by fit, never by ad spend</div>
+          </div>
+          <div class="floating-note"><span class="note-icon">◎</span><span><b>Your story matters</b><small>Share your context once</small></span></div>
+          <div class="hero-visual-caption">Personalized, not random.</div>
+        </div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="intro section-pad" id="about">
+      <div class="container intro-grid">
+        <div>
+          <p class="eyebrow">What is MedAlign?</p>
+          <h2>A matching layer between <em>patients</em> and clinics.</h2>
+        </div>
+        <div class="intro-text">
+          <p>MedAlign is an online patient-to-clinic matching platform, free for patients. Instead of sorting through search results, outdated directories and paid ads, you answer a few guided questions and see specialized clinics ranked by how well they fit.</p>
+          <p>The matching process considers goals, symptoms, treatment interests, medical considerations, preferred location, lifestyle and desired therapies. The aim is to help you understand your options before choosing whether to connect with a clinic.</p>
+          <a class="arrow-link" href="#how-it-works">Explore the five-step process <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">From questions to consultation</p>
+          <h2>Five steps. A clearer <em>next move.</em></h2>
+          <p>Move from an assessment to a clinic consultation without weeks of searching.</p>
+        </div>
+        <div class="steps">
+          <article class="step-card"><div class="step-number">01</div><div class="step-icon">⌁</div><h3>Take the assessment</h3><p>Eight short steps cover your goals, symptoms and lifestyle. It takes about four minutes, and no account is needed.</p><span class="step-meta">ABOUT 4 MINUTES</span></article>
+          <article class="step-card"><div class="step-number">02</div><div class="step-icon">✳</div><h3>Receive matches</h3><p>Personalized clinic recommendations appear instantly, ranked by fit and shown with a match percentage.</p><span class="step-meta">RANKED BY FIT</span></article>
+          <article class="step-card"><div class="step-number">03</div><div class="step-icon">▤</div><h3>Compare clinics</h3><p>Review services, pricing, wait times and telehealth options side by side, at your own pace.</p><span class="step-meta">COMPARE YOUR OPTIONS</span></article>
+          <article class="step-card"><div class="step-number">04</div><div class="step-icon">↗</div><h3>Schedule a consultation</h3><p>Book directly or request a callback. Your location and contact details are requested at this stage.</p><span class="step-meta">ABOUT 1 MINUTE</span></article>
+          <article class="step-card"><div class="step-number">05</div><div class="step-icon">✓</div><h3>Begin the journey</h3><p>Your profile is shared with the clinic you choose, so your goals and interests are already part of the conversation.</p><span class="step-meta">YOUR CONTEXT GOES WITH YOU</span></article>
+        </div>
+        <div class="process-note"><span class="note-check">✓</span><p><strong>No account to get started.</strong> You see your matches before MedAlign asks for your location and contact details.</p></div>
+      </div>
+    </section>
+
+    <section class="fit-section section-pad">
+      <div class="container fit-grid">
+        <div class="fit-copy">
+          <p class="eyebrow">A match with more context</p>
+          <h2>Not just what you search. <em>What matters to you.</em></h2>
+          <p>The matching engine weighs dozens of responses to understand what you are looking for and which clinics may align with your needs.</p>
+          <ul class="check-list">
+            <li><span>✓</span>Your goals and desired outcomes</li>
+            <li><span>✓</span>Symptoms and medical considerations</li>
+            <li><span>✓</span>Treatment interests and desired therapies</li>
+            <li><span>✓</span>Preferred location and lifestyle</li>
+          </ul>
+          <p class="small-note">Clinic matches are informational. They are not medical advice, a diagnosis or a clinical referral.</p>
+        </div>
+        <div class="fit-panel">
+          <div class="panel-top"><span>HOW FIT IS CONSIDERED</span><span class="panel-symbol">✳</span></div>
+          <div class="fit-profile"><div class="profile-avatar">Y</div><div><b>Your priorities</b><small>An illustrative assessment profile</small></div></div>
+          <div class="profile-row"><span>Goals</span><b>Energy · Fat loss</b></div>
+          <div class="profile-row"><span>Symptoms</span><b>Fatigue · Low motivation</b></div>
+          <div class="profile-row"><span>Interests</span><b>HRT · Peptide therapy</b></div>
+          <div class="profile-row"><span>Location</span><b>Within 15 miles</b></div>
+          <div class="profile-row"><span>Desired therapy</span><b>Testosterone optimization</b></div>
+          <div class="panel-bottom"><span class="panel-check">✓</span><span>Recommendations reflect your answers—not advertising spend.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialties section-pad" id="specialties">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Specialties on MedAlign</p>
+          <h2>Specialized care, <em>more discoverable.</em></h2>
+          <p>Explore clinic options across specialized wellness and medical care categories.</p>
+        </div>
+        <div class="specialty-grid">
+          <div class="specialty"><span>01</span><b>Hormone optimization</b><i>↗</i></div>
+          <div class="specialty"><span>02</span><b>Peptide &amp; metabolic therapy</b><i>↗</i></div>
+          <div class="specialty"><span>03</span><b>Med spa &amp; aesthetics</b><i>↗</i></div>
+          <div class="specialty"><span>04</span><b>Functional medicine</b><i>↗</i></div>
+          <div class="specialty"><span>05</span><b>Metabolic health</b><i>↗</i></div>
+          <div class="specialty"><span>06</span><b>IV &amp; infusion therapy</b><i>↗</i></div>
+          <div class="specialty"><span>07</span><b>Weight loss medicine</b><i>↗</i></div>
+          <div class="specialty"><span>08</span><b>Longevity &amp; anti-aging</b><i>↗</i></div>
+          <div class="specialty"><span>09</span><b>Sexual health</b><i>↗</i></div>
+          <div class="specialty"><span>10</span><b>Regenerative medicine</b><i>↗</i></div>
+          <div class="specialty"><span>11</span><b>Biohacking &amp; performance</b><i>↗</i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience section-pad" id="for-clinics">
+      <div class="container audience-grid">
+        <div class="audience-card patient-card">
+          <p class="eyebrow">For patients</p>
+          <h2>Find options that fit your <em>priorities.</em></h2>
+          <p>Use a short assessment to discover personalized matches and compare the details that matter before you decide whether to connect.</p>
+          <ul class="simple-list"><li>Free to use, with no credit card</li><li>Personalized clinic matches</li><li>Compare services, pricing and wait times</li><li>No account needed for the assessment</li></ul>
+          <a class="button button-dark" href="https://getmedalign.com/assessment">Find your clinic <span>↗</span></a>
+        </div>
+        <div class="audience-card clinic-card">
+          <p class="eyebrow">For clinics</p>
+          <h2>Connect with patients who show <em>intent.</em></h2>
+          <p>List your clinic, select the services you want to grow and receive patient inquiries matched to your specialties, capacity and selected criteria.</p>
+          <ul class="simple-list"><li>Prequalified, intent-driven inquiries</li><li>Control over consultation volume</li><li>Track consultations and patient feedback</li><li>Billing per qualified consultation</li></ul>
+          <a class="button button-light" href="https://getmedalign.com/clinic">List your clinic <span>↗</span></a>
+          <small class="clinic-disclaimer">No long-term contracts. Patient volume is not guaranteed.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-model section-pad">
+      <div class="container model-grid">
+        <div>
+          <p class="eyebrow">A different model for clinics</p>
+          <h2>Focus on qualified <em>consultations.</em></h2>
+          <p>MedAlign is designed to complement a clinic's existing channels—such as referrals, SEO, paid ads and social media—not replace them.</p>
+        </div>
+        <div class="model-points">
+          <div><span class="model-icon">01</span><p><b>Assessment before referral</b><small>Patients share their goals and interests before a clinic connection is requested.</small></p></div>
+          <div><span class="model-icon">02</span><p><b>Patient chooses to connect</b><small>A clinic receives a scheduled consultation after a patient explicitly asks to connect.</small></p></div>
+          <div><span class="model-icon">03</span><p><b>Billing per qualified consultation</b><small>Clinics are billed per qualified consultation, with no long-term contracts.</small></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust section-pad" id="trust">
+      <div class="container trust-grid">
+        <div class="trust-copy">
+          <p class="eyebrow">Is MedAlign legit?</p>
+          <h2>Clear about what it does—and <em>what it doesn't.</em></h2>
+          <p>When a platform asks for health-related information, it is reasonable to ask how it works. MedAlign describes its role, matching approach and business model directly.</p>
+          <a class="arrow-link" href="#faqs">Read common questions <span>↗</span></a>
+        </div>
+        <div class="trust-list">
+          <div class="trust-item"><span class="trust-symbol">✓</span><div><b>Free for patients</b><p>The assessment and clinic matches are free. No credit card is required.</p></div></div>
+          <div class="trust-item"><span class="trust-symbol">✓</span><div><b>Ranked by fit, not ad spend</b><p>MedAlign states that clinics cannot pay to move up the match list.</p></div></div>
+          <div class="trust-item"><span class="trust-symbol">✓</span><div><b>Details requested at the end</b><p>No account is needed. Location and contact details are requested after you see your matches.</p></div></div>
+          <div class="trust-item"><span class="trust-symbol">✓</span><div><b>Patient chooses to connect</b><p>A clinic receives a scheduled consultation only after you explicitly ask to connect.</p></div></div>
+        </div>
+      </div>
+      <div class="container important-box">
+        <div class="important-icon">i</div>
+        <div><b>Important: MedAlign is not a healthcare provider.</b><p>It does not diagnose, treat or prescribe. Matches are informational and are not medical advice, a diagnosis or a clinical referral. Treatment decisions are made between the patient and the clinic they choose. Patients should check clinic licensing and clinician credentials before starting treatment.</p></div>
+      </div>
+      <div class="container privacy-note"><span class="privacy-lock">⌑</span><p><b>Information and privacy:</b> MedAlign states that it sends no spam and is HIPAA compliant. It also states that patient details are not broadcast to every clinic; a clinic receives a scheduled consultation only after the patient explicitly asks to connect.</p></div>
+    </section>
+
+    <section class="faq-section section-pad" id="faqs">
+      <div class="container faq-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Frequently asked questions</p>
+          <h2>Good questions. <em>Clear answers.</em></h2>
+          <p>Understand the assessment, matching process and what happens when you choose a clinic.</p>
+        </div>
+        <div class="faq-list">
+          <details><summary>What is MedAlign (Med Align)?<span>+</span></summary><p>MedAlign is a patient-to-clinic matching platform that is free for patients. It uses a short health assessment to show personalized recommendations for specialized wellness and medical clinics, ranked by fit.</p></details>
+          <details><summary>Is MedAlign free for patients?<span>+</span></summary><p>Yes. The assessment and clinic matches are free, and no credit card is required. Clinics pay per qualified consultation.</p></details>
+          <details><summary>How long does the assessment take?<span>+</span></summary><p>The assessment has eight short steps and takes about four minutes. Scheduling a consultation afterwards takes about a minute.</p></details>
+          <details><summary>Do I need to create an account?<span>+</span></summary><p>No account is needed to take the assessment. MedAlign asks for your location and contact details at the very end, after you have seen your matches.</p></details>
+          <details><summary>How are clinics ranked?<span>+</span></summary><p>MedAlign states that matches are ranked by fit, never by ad spend. Rankings are based on how closely a clinic's services line up with your answers.</p></details>
+          <details><summary>Is MedAlign a healthcare provider?<span>+</span></summary><p>No. MedAlign is a matching platform. It does not diagnose, treat or prescribe. Matches are informational and are not medical advice, a diagnosis or a clinical referral.</p></details>
+          <details><summary>Does MedAlign guarantee patients to clinics?<span>+</span></summary><p>No. MedAlign aims to send better-matched scheduled consultations, but it does not guarantee patient volume. Clinics are billed per qualified consultation, with no long-term contracts.</p></details>
+          <details><summary>Is this the same as medalign.com or AlignMed?<span>+</span></summary><p>No. The MedAlign described here is the patient-to-clinic matching platform at getmedalign.com. It is unrelated to the other organizations that share a similar name.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <div><p class="eyebrow">Personalized, not random.</p><h2>Your next step can start <em>here.</em></h2><p>Take the free assessment and explore clinic matches based on your answers.</p></div>
+        <a class="button button-primary button-large" href="https://getmedalign.com/assessment">Start your free assessment <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="#home"><span class="brand-mark"><span></span><span></span><span></span></span><span>med<span class="brand-light">align</span></span></a><p>Personalized, not random.<br>A clearer way to find a clinic that fits.</p></div>
+      <div class="footer-col"><b>Explore</b><a href="#about">About MedAlign</a><a href="#how-it-works">How it works</a><a href="#specialties">Specialties</a><a href="#trust">Trust &amp; clarity</a></div>
+      <div class="footer-col"><b>Get started</b><a href="https://getmedalign.com/assessment">Patient assessment ↗</a><a href="https://getmedalign.com/clinic">List your clinic ↗</a><a href="#faqs">FAQs</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> MedAlign. All rights reserved.</span><span>MedAlign is a matching platform, not a healthcare provider.</span></div>
+  </footer>
+  <script>
+const menuButton = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".primary-nav");
+
+if (menuButton && nav) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation");
+    });
+  });
+}
+
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
+
+  </script>
+</body>
+</html>
+
